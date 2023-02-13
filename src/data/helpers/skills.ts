@@ -164,3 +164,59 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+export const csharp = createSkillFactory({
+  name: 'C#',
+  icon: 'simple-icons:csharp',
+  iconColor: '#239120',
+  url: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+});
+
+export const dotnet = createSkillFactory({
+  name: '.NET',
+  icon: 'simple-icons:dotnet',
+  iconColor: '#FFFFFF',
+  url: 'https://dotnet.microsoft.com/',
+});
+
+export const MSSQL = createSkillFactory({
+  name: 'MS SQL',
+  icon: 'simple-icons:microsoftsqlserver',
+  iconColor: '#CC2927',
+  url: 'https://www.microsoft.com/en-us/sql-server/sql-server-2019',
+});
+
+export const Bunifu = createSkillFactory({
+  name: 'Bunifu',
+  icon: 'simple-icons:bunifu',
+  iconColor: '#FFD700',
+  url: 'https://bunifuframework.com/',
+});
+
+export const javascript = createSkillFactory({
+  name: 'JavaScript',
+  icon: 'simple-icons:javascript',
+  iconColor: '#F7DF1E',
+  url: 'https://www.javascript.com/',
+});
+
+export const reactNative = createSkillFactory({
+  name: 'React Native',
+  icon: 'simple-icons:react',
+  iconColor: '#61DAFB',
+  url: 'https://reactnative.dev/',
+});
+
+export const python = createSkillFactory({
+  name: 'Python',
+  icon: 'simple-icons:python',
+  iconColor: '#3776AB',
+  url: 'https://www.python.org/',
+});
+
+export const awsamplify = createSkillFactory({
+  name: 'AWS Amplify',
+  icon: 'simple-icons:awsamplify',
+  iconColor: '#FF9900',
+  url: 'https://aws.amazon.com/amplify/',
+});

@@ -11,10 +11,10 @@ const config = {
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
+    title: 'Ramil S. Cobilla Jr. - Entry React Developer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
-    faviconPath: '/src/assets/my-image.jpeg',
+      'I am a computer science student with a passion for software development. I have experience in using technologies such as ReactJS, React Native, HTML, CSS, C#, and MySQL, and have worked on freelance projects as a software developer. I am a proactive individual with strong technical and soft skills, and I am seeking internships to apply my skills and gain practical experience in the field. I am confident in my ability to deliver high-quality results and make a valuable contribution to any software development team.',
+    faviconPath: '/src/assets/profile.jpg',
   },
   pdf: {
     footer:

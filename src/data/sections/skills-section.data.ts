@@ -1,22 +1,21 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import {
-  apolloGraphql,
   astro,
-  chakraUi,
-  cypress,
   eslint,
-  firebase,
-  mongoDb,
-  nestJs,
-  pnpm,
   postgreSql,
   prettier,
   react,
-  sass,
   supabase,
   tailwindCss,
   typescript,
+  csharp,
+  javascript,
+  reactNative,
+  MSSQL,
+  python,
+  awsamplify,
+  nextJs,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -31,47 +30,47 @@ const skillsSectionData = {
       title: 'I already know',
       skills: [
         react({
-          level: 5,
+          level: 4,
+          description: 'The first framework I learned. I have experience with React Hooks, Zustand, and React Router.',
+        }),
+        javascript({
+          level: 4,
+          description: 'I have experience with ES6+ syntax, DOM manipulation, and asynchronous programming.',
+        }),
+        reactNative({
+          level: 4,
           description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+            'I have experience with React Native, Expo, and React Navigation. Currently working on a project with React Native and Expo.',
         }),
-        typescript({
+        csharp({
           level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          description:
+            'I have experience with C# and .NET Core. I have developed a Inventory and POS system for a pet shop and a hardware store.',
         }),
-        sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
+        MSSQL({
+          level: 3,
         }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 2 }),
+
+        tailwindCss({ level: 3 }),
         prettier({ level: 5 }),
         eslint({
           level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
         }),
-        nestJs({
-          level: 2,
-          description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
-        }),
+
         postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+        python({ level: 2 }),
+        awsamplify({ level: 2 }),
       ],
     },
     {
       title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      skills: [astro(), supabase(), typescript(), nextJs()],
     },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
+        { icon: 'circle-flags:ph', name: 'Filipino - native' },
         { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
       ],
     },
   ],

@@ -13,6 +13,10 @@ import {
   tailwindCss,
   typescript,
   vue,
+  csharp,
+  dotnet,
+  MSSQL,
+  Bunifu,
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -24,59 +28,39 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      role: 'Freelance Software Developer',
+      company: 'ThermaCut Hardware Store',
+      image: import('@/assets/logos/thermacut.png'),
+      dates: [new Date('2021-04'), new Date('2021-06')],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+        - Developed front-end in C# Windows Form and back-end deployed in MSSQL
+        - Worked closely with the client to gather requirements and design the software solution according to their specifications
+        - Provided weekly updates and received feedback from the client to ensure satisfaction with the solution
+        - Implemented and delivered a high-quality software solution that met project deadlines
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
+        tags: [csharp(), dotnet(), MSSQL(), Bunifu()],
       },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
+      links: [facebook({ url: 'https://www.facebook.com/thermacuthardware' }), linkedin({ url: '#' })],
     },
     {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
+      role: 'Freelance Software Developer',
+      company: 'Fur and Me Animal Clinic',
+      image: import('@/assets/logos/furandme.jpg'),
+      dates: [new Date('2020-03'), new Date('2021-03')],
       description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
+        - Developed a comprehensive software solution for a pet shop with inventory and POS system, including user management.
+        - Utilized C# Windows Form to create a more complex software solutions
+        - Implemented inventory system to manage and track the pet shop's products
+        - Designed and developed a POS system with user management capabilities
+        - Delivered a high-quality software solution that met project deadlines and improved the efficiency of the pet shop's operations.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
+        tags: [csharp(), dotnet(), MSSQL(), Bunifu()],
       },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
-    },
-    {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
-      description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-        Donec non vulputate augue 🤓
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
-      },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [facebook({ url: 'https://www.facebook.com/furandme' }), linkedin({ url: '#' })],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;
