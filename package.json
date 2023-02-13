@@ -26,6 +26,7 @@
     "check": "concurrently npm:*:check"
   },
   "dependencies": {
+    "@astrojs/vercel": "3.1.1",
     "@floating-ui/dom": "1.2.0",
     "iconify-icon": "1.0.3",
     "nanoid": "4.0.1"
@@ -36,7 +37,7 @@
     "@astrojs/tailwind": "3.0.1",
     "@percy/cli": "1.18.0",
     "@types/marked": "4.0.8",
-    "astro": "2.0.6",
+    "astro": "2.0.10",
     "astro-compress": "1.1.29",
     "concurrently": "7.6.0",
     "date-fns": "2.29.3",

@@ -4,6 +4,8 @@ import compress from 'astro-compress';
 import { defineConfig } from 'astro/config';
 import { visualizer } from 'rollup-plugin-visualizer';
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), image(), compress()],
@@ -11,8 +13,10 @@ export default defineConfig({
     plugins: [visualizer()],
     resolve: {
       alias: {
-        'date-fns/locale': 'date-fns/locale/index.js',
-      },
-    },
+        'date-fns/locale': 'date-fns/locale/index.js'
+      }
+    }
   },
+  output: "server",
+  adapter: vercel()
 });
