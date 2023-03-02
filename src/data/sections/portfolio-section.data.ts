@@ -16,6 +16,10 @@ import {
   sass,
   tailwindCss,
   typescript,
+  reactNative,
+  awsamplify,
+  python,
+  flask,
 } from '../helpers/skills';
 
 const portfolioSectionData = {
@@ -31,39 +35,72 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'Isko ni Juan',
+      image: import('@/assets/portfolio/isko/logo.png'),
+      dates: [new Date('2021-03'), null],
       details: [
-        { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
+        { label: 'Team size', value: '5 people' },
+        { label: 'My role', value: ['FullStack Developer'] },
         { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Category', value: ['Mobile App', 'Donation App'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
+        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
+        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
       ],
       screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
+        { src: import('@/assets/portfolio/isko/Portfolio-1.png'), alt: 'First screenshot' },
+        { src: import('@/assets/portfolio/isko/Portfolio-2.png'), alt: 'Second screenshot' },
+        { src: import('@/assets/portfolio/isko/Portfolio-3.png'), alt: 'Third screenshot' },
+        { src: import('@/assets/portfolio/isko/Portfolio-4.png'), alt: 'Fourth screenshot' },
+        { src: import('@/assets/portfolio/isko/Portfolio-5.png'), alt: 'Fifth screenshot' },
       ],
       description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+        'Isko ni Juan is a platform that leverages the power of small-scale philanthropy and machine learning to finance college students. Our mission is to make higher education accessible to every deserving Filipino by empowering individuals to invest in the future of our nation.',
       tagsList: {
         title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [reactNative(), awsamplify(), python(), pnpm()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [website({ url: '#' }), github({ url: '#' })],
     },
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
+      name: 'Poetry Generator',
+      image: import('@/assets/portfolio/poetry/logo-1.png'),
+      dates: [new Date('2020-09'), new Date('2021-02')],
+      details: [
+        { label: 'Team size', value: '5 person' },
+        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
+        { label: 'Company', value: 'None' },
+        { label: 'Category', value: ['Web app', 'Machine Learning'] },
+      ],
+      pdfDetails: [
+        { label: 'Demo', value: '#', url: '#' },
+        {
+          label: 'Repository',
+          value: 'https://github.com/DevRSC/poetry-generator',
+          url: 'https://github.com/DevRSC/poetry-generator',
+        },
+      ],
+      screenshots: [
+        { src: import('@/assets/portfolio/poetry/Portfolio-1.png'), alt: 'First screenshot' },
+        { src: import('@/assets/portfolio/poetry/Portfolio-2.png'), alt: 'Second screenshot' },
+        { src: import('@/assets/portfolio/poetry/Portfolio-3.png'), alt: 'Third screenshot' },
+      ],
+      description:
+        'Our Shakespearean Poetry Generator is a one-of-a-kind platform that combines the timeless beauty of Shakespearean poetry with the power of machine learning. With just a few clicks, our generator can produce original sonnets and other poetic forms in the style of the great Bard himself. Whether youre a literature enthusiast or simply looking for a unique creative outlet, our platform offers a fun and engaging way to explore the world of Shakespearean poetry. So why wait? Start generating your own masterpieces today!',
+      tagsList: {
+        title: 'Technologies',
+        tags: [react(), tailwindCss(), pnpm(), eslint(), prettier()],
+      },
+      links: [],
+    },
+    {
+      name: 'Sixth Sense',
+      image: import('@/assets/portfolio/sixth/logo-2.png'),
       dates: [new Date('2019-06'), new Date('2020-02')],
       details: [
-        { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
+        { label: 'Team size', value: '5 people' },
+        { label: 'My role', value: ['Front-end Developer', 'Back-end Developer', 'Designer'] },
         { label: 'Company', value: 'Facebook' },
         { label: 'Category', value: ['Web app', 'Mobile app'] },
       ],
@@ -71,58 +108,43 @@ const portfolioSectionData = {
         { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
         { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
       ],
-      description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
-      },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
-    },
-    {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
-      details: [
-        { label: 'Team size', value: '3 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
+      screenshots: [
+        { src: import('@/assets/portfolio/sixth/Portfolio-1.png'), alt: 'First screenshot' },
+        { src: import('@/assets/portfolio/sixth/Portfolio-2.png'), alt: 'Second screenshot' },
+        { src: import('@/assets/portfolio/sixth/Portfolio-3.png'), alt: 'Third screenshot' },
+        { src: import('@/assets/portfolio/sixth/Portfolio-4.png'), alt: 'Fourth screenshot' },
       ],
       description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
+        'Sixth Sense is a web application that uses an Xception Model to classify Brain Tumor in MRI. It also features Medical Management System specifically designed for neurologist that focuses on brain tumor. It aims to detect tumors in patients with brain tumors and bring prognostic value by assisting doctors and radiologists to speed up the process of diagnosing patients and accurately classifying them.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        tags: [react(), tailwindCss(), postgreSql(), python()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
+      links: [],
     },
-    {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
-      details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
-      ],
-      description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
-      tagsList: {
-        title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
-      },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
-    },
+
+    // {
+    //   name: 'Disco Ninjas',
+    //   image: import('@/assets/portfolio/project-4.jpeg'),
+    //   dates: [new Date('2016-05'), new Date('2018-07')],
+    //   details: [
+    //     { label: 'Team size', value: '11 people' },
+    //     { label: 'My role', value: 'Front-end Developer' },
+    //     { label: 'Company', value: 'Google' },
+    //     { label: 'Category', value: ['Mobile app', 'Open source'] },
+    //   ],
+    //   pdfDetails: [
+    //     { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
+    //     { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
+    //   ],
+    //   description:
+    //     'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
+    //   tagsList: {
+    //     title: 'Technologies',
+    //     tags: [typescript(), jest(), firebase()],
+    //   },
+    //   links: [mockups({ url: '#' }), github({ url: '#' })],
+    // },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;
 
