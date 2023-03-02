@@ -1,6 +1,5 @@
-# DevsCard
+# DevRSC
 
-A fully customizable template to create your online (and paper) resume without writing a single line of code.
 
 ## Features
 
@@ -15,15 +14,3 @@ A fully customizable template to create your online (and paper) resume without w
 - **🏭 Favicons generation** — invoke one command to generate all favicons and full app manifest for your website.
 - **🛠 Data helpers** — use built-in helpers to define your skills/socials once and reuse them across the configuration.
 - **🔀 Data transformers** — utilize type-safe data transformers to create multiple variants of your resume without duplicating your data.
-
-## Documentation
-
-To learn how to set up your resume, go to:
-
-[https://devscard.gitbook.io/docs](https://devscard.gitbook.io/docs/setup-guide)
-
-## Example
-
-To see an example CV, visit the link below:
-
-[https://devscard.netlify.app](https://devscard.netlify.app/)
